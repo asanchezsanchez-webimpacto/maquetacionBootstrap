@@ -120,7 +120,7 @@
      
  }
 
- @media all and (min-width:990px) {
+ @media all and (min-width:992px) {
     .visible {
          display:none;
     }
