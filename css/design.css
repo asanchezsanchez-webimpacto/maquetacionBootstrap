@@ -1,6 +1,11 @@
+
+/*DISEÑO MOBILE-FIRST*/
+.serVisible{
+    display: none;
+}
 .rectangle-24  {
     height: 25px;
-    width: 320px;
+    width: 100%;
     background-color: #808080;
     text-align:center;
 }
@@ -113,4 +118,39 @@
  .margen {
      border: 2px solid violet;
      
+ }
+
+ @media all and (min-width:990px) {
+    .visible {
+         display:none;
+    }
+    .serVisible{
+         display: inline;
+    }
+
+    .colocacion-div-superior {
+        display:flex;
+        justify-content: space-around;
+    }
+ 
+    .containerDivDesktop {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .fill-1 {
+        height: 30px;
+    }
+    .containerDivDesktop > form {
+        margin-top:30px;
+    }
+    .color-fondo {
+        background-color: #FBFAF9;
+    }
+    .fill-2 {
+        width: 10%;
+    }
+    .containerDivDesktop > p {
+        margin-top:3%;
+    }
  }

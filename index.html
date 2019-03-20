@@ -21,57 +21,108 @@
 </head>
 
 <body>
-    <div class="col-xs-12 rectangle-24 {">
-        <p class="envio-gratis-a-parti {">
-            <img class="shape" src="images/delivery-box.svg">
-            Envio Gratis a partir de 45€
-        </p>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-        <button class=" quito-linea navbar-toggler row" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <img clas="fill-1" src="images/menu_mobile.svg">
-        </button>
-
-        <img class="row" src="images/telephone.svg">
-        <img src="images/Logo.svg">
-        <img src="images/icono cuenta.svg">
-        <img src="images/cart.svg">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">XXXX <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">XXXXx</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">XXXXX</a>
-                        <a class="dropdown-item" href="#">XXXXXXX</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">XXXXXX</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
+    <header>
+        <!--DIV QUE CONTIENE LA CABECERA CON LOS 3 MENSAJES-->
+        <div class="col-xs-12 rectangle-24 colocacion-div-superior ">
+            <p class="envio-gratis-a-parti serVisible"><img src="images/phone-call.svg">¿Necesitas ayuda? 919 019 101 |
+                932 711 184</p>
+            <p class="envio-gratis-a-parti"><img class="shape" src="images/delivery-box.svg">Envio Gratis a partir de
+                45€</p>
+            <p class="envio-gratis-a-parti serVisible"><img src="images/devolucion.svg">30 días - plazo devolución
+                gratuita</p>
         </div>
-    </nav>
-    <form>
-        <div class="form-group input-group">
+
+        <!--DIV QUE CONTIENE LOS ELEMENTOS QUE VAN A SER VISIBLES CUANDO SEA DESKTOP-->
+        <div class="containerDivDesktop serVisible">
+            <img class="" src="images/Logo.svg">
+
+            <form class=" col-lg-7">
+                <div class="form-group input-group col">
+                    <input type="text" class="form-control bg-busca color-fondo" placeholder="¿Que buscas hoy?">
+                    <button class="bg-button" type="button">
+                        <span class=""><img class="search-material" src="images/search.svg"></span>
+                    </button>
+                </div>
+            </form>
+
+            <p><img class="fill-1" src="images/favoritos.svg"><span>Favoritos</span></p>
+            <p><img class=" fill-1" src="images/icono cuenta.svg"><span>Cuenta</span></p>
+            <img class="fill-2" src="images/carrito.png">
+        </div>
+
+        <!--NAVBAR SECUNDARIO, SERA EL VISUALIZADO CON EL TELEFONO-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light visible">
+            <button class=" quito-linea navbar-toggler row" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img clas="fill-1" src="images/menu_mobile.svg">
+            </button>
+
+            <div class="collapse navbar-collapse visible" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">ALIMENTACIÓN <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">COSMÉTICA<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HIGIENE <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">MAMÁ Y BEBÉ <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">DEPORTE <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HUERTO <span class="sr-only"></span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <img src="images/telephone.svg">
+            <img src="images/Logo.svg">
+            <img src="images/icono cuenta.svg">
+            <img src="images/cart.svg">
+        </nav>
+
+        <!--NAVBAR CUANDO LA PANTALLA SEA DESKTOP-->
+        <div class="color-fondo">
+            <nav class="navbar navbar-expand-lg navbar-light bg-ligth serVisible ">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">ALIMENTACIÓN <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">COSMÉTICA<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HIGIENE <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">MAMÁ Y BEBÉ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">DEPORTE <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HUERTO <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!--BUSCADOR PRINCIPAL QUE SE VERA SOLO CON EL TELEFONO-->
+        <form class="form-group input-group visible">
             <input type="text" class="form-control bg-busca" placeholder="¿Que buscas hoy?">
             <button class="bg-button" type="button">
                 <span class=""><img class="search-material" src="images/search.svg"></span>
             </button>
-        </div>
-    </form>
+        </form>
+    </header>
+
     <div class="rectangle-18">
         <p class="promociones-de-invi">¡Promociones de invierno! Gastos de envio gratis para cosmetica</p>
     </div>
@@ -89,4 +140,4 @@
     </div>
 </body>
 
-</htm
+</html>
