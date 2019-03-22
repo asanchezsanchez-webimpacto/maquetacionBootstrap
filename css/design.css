@@ -72,6 +72,10 @@ header {
     align-items: center;
 }
 
+.bg-busca::placeholder {
+    font-weight: bold;
+}
+
 /*BANNERS*/
 .rectangle-18 {	
     height: 25px;	
