@@ -1,8 +1,14 @@
 
 /*DISEÑO MOBILE-FIRST*/
+header {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .serVisible{
     display: none;
 }
+
+/*DIV SUPERIOR*/
 .rectangle-24  {
     height: 25px;
     width: 100%;
@@ -11,7 +17,6 @@
 }
 
 .envio-gratis-a-parti {
-
     color: #FFFFFF;
     font-family: "Brandon Grotesque";
     font-size: 12px;
@@ -23,16 +28,24 @@
     height: 16px;
     width: 18px;
 }
+
+/*NAVBAR TELEFONO*/
+.quito-linea {
+    border: 0px;
+}
+
 .fill-1 {	
     height: 18.88px;
     width: 20.27px;
 }
 
-.quito-linea {
-    border: 0px;
+.colocacionBarra {
+    display:inline-block;
+    margin-top:1%;
 }
 
 
+/*FORM*/
 .bg-busca {
     height: 35px;
     width: 312px;
@@ -50,6 +63,16 @@
     height: 18px;	
     width: 18px;
 }
+
+.botonMovil {
+    border: 0px;
+    border-radius: 7px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BANNERS*/
 .rectangle-18 {	
     height: 25px;	
     width: 320px;	
@@ -62,7 +85,7 @@
     width: 100%;
     color: #FFFFFF;
     font-family: "Brandon Grotesque";
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     text-align: center;
 }
@@ -114,43 +137,93 @@
 }
  .color-boton{
     background-color: #5CB8A3;
+    border:0px;
  }
- .margen {
-     border: 2px solid violet;
-     
- }
+
+.centrarBanner {
+    margin-top:2%;
+    width:100%;
+    background-color: white;
+    text-align:center;
+}
 
  @media all and (min-width:992px) {
+
     .visible {
-         display:none;
-    }
-    .serVisible{
-         display: inline;
+        display:none;
+   }
+
+   .serVisible{
+    display: inline;
     }
 
+    /*DIV SUPERIOR*/
     .colocacion-div-superior {
         display:flex;
         justify-content: space-around;
     }
- 
-    .containerDivDesktop {
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
+
+
+    /*NAVBAR*/
+    .color-nav{
+        background-color: lightgrey;
     }
+
     .fill-1 {
-        height: 30px;
+        height: 70px;
     }
-    .containerDivDesktop > form {
-        margin-top:30px;
-    }
+   
     .color-fondo {
         background-color: #FBFAF9;
     }
-    .fill-2 {
-        width: 10%;
+
+    .ofertas {
+        color:#EE7D6D;
     }
-    .containerDivDesktop > p {
-        margin-top:3%;
+
+    .colocacionBotonDesktop {
+        width: 37px;
+        height: 37px;
+        border: 0px;
+        border-radius: 7px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .colocacionInputDesktop {
+        border-radius:7px;
+    }
+    /*ICONOS*/
+    .rectangle-13 {	
+        height: 45px;	
+        width: 105px;	
+        border: 1px solid #F2F2F2;	
+        border-radius: 6px;
+    }
+    .tamannoFavorito {
+        margin-top:7px;
+    }
+
+    .colocacionLogoDesktop {
+        margin-left:15%;
+
+    }
+
+    .tammanoDivIconos {
+        margin-left:3%;
+    }
+
+    .favorito{
+        width:22px;
+    }
+
+    .spanMiCuenta {
+        color:black;
+    }
+
+    /*BANNERS*/
+    .mask { 
+        width:700px;
     }
  }

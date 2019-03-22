@@ -18,121 +18,180 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/design.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="row">
         <!--DIV QUE CONTIENE LA CABECERA CON LOS 3 MENSAJES-->
-        <div class="col-xs-12 rectangle-24 colocacion-div-superior ">
-            <p class="envio-gratis-a-parti serVisible"><img src="images/phone-call.svg">¿Necesitas ayuda? 919 019 101 |
+        <div class="col-12 rectangle-24 colocacion-div-superior col-lg-12">
+            <p class="envio-gratis-a-parti serVisible"><img class="shape" src="images/phone-call.svg"> ¿Necesitas ayuda?
+                919 019 101 |
                 932 711 184</p>
-            <p class="envio-gratis-a-parti"><img class="shape" src="images/delivery-box.svg">Envio Gratis a partir de
+            <p class="envio-gratis-a-parti"><img class="shape" src="images/delivery-box.svg"> Envio Gratis a partir de
                 45€</p>
-            <p class="envio-gratis-a-parti serVisible"><img src="images/devolucion.svg">30 días - plazo devolución
+            <p class="envio-gratis-a-parti serVisible"><img class="shape" src="images/devolucion.svg"> 30 días - plazo
+                devolución
                 gratuita</p>
         </div>
 
-        <!--DIV QUE CONTIENE LOS ELEMENTOS QUE VAN A SER VISIBLES CUANDO SEA DESKTOP-->
-        <div class="containerDivDesktop serVisible">
-            <img class="" src="images/Logo.svg">
+        <!--NAVBAR SERA EL VISUALIZADO CON EL TELEFONO-->
+        <div class="col-1 visible">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+                <button class=" quito-linea navbar-toggler row" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img clas="fill-1" src="images/menu_mobile.svg">
+                </button>
 
-            <form class=" col-lg-6">
-                <div class="form-group input-group col">
-                    <input type="text" class="form-control bg-busca color-fondo" placeholder="¿Que buscas hoy?Encuentra entre mas de 30 mil productos...">
-                    <button class="bg-button" type="button">
-                        <span class=""><img class="search-material" src="images/search.svg"></span>
-                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">ALIMENTACIÓN</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">COSMÉTICA</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">HIGIENE</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">MAMÁ Y BEBÉ</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">DEPORTE</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">HUERTO</a>
+                        </li>
+                    </ul>
                 </div>
-            </form>
-
-            <p><img class="fill-1" src="images/favoritos.svg"><span>Favoritos</span></p>
-
-            <div class="col-2 nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false"><img src="images/icono cuenta.svg">Mi cuenta</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </div>
-            <img class="fill-2" src="images/carrito.png">
-        </div>
-
-        <!--NAVBAR SECUNDARIO, SERA EL VISUALIZADO CON EL TELEFONO-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light visible">
-            <button class=" quito-linea navbar-toggler row" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <img clas="fill-1" src="images/menu_mobile.svg">
-            </button>
-
-            <div class="collapse navbar-collapse visible" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">ALIMENTACIÓN <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">COSMÉTICA<span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HIGIENE <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">MAMÁ Y BEBÉ <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">DEPORTE <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HUERTO <span class="sr-only"></span></a>
-                    </li>
-                </ul>
-            </div>
-
-            <img src="images/telephone.svg">
-            <img src="images/Logo.svg">
-            <img src="images/icono cuenta.svg">
-            <img src="images/cart.svg">
-        </nav>
-
-        <!--NAVBAR CUANDO LA PANTALLA SEA DESKTOP-->
-        <div class="color-fondo">
-            <nav class="navbar navbar-expand-lg navbar-light bg-ligth serVisible ">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">ALIMENTACIÓN <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">COSMÉTICA<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HIGIENE <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">MAMÁ Y BEBÉ <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">DEPORTE <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HUERTO <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
             </nav>
         </div>
 
+        <div class="col-9 col-lg-12 colocacionBarra">
+            <div class="row">
+                <!--TELEFONO MOVIL-->
+                <div class="col-1 visible">
+                    <img class="oval-3" src="images/telephone.svg">
+                </div>
+                <!--LOGO MOVIL-->
+                <div class="col-6 visible">
+                    <img src="images/logo.svg">
+                </div>
 
-        <!--BUSCADOR PRINCIPAL QUE SE VERA SOLO CON EL TELEFONO-->
-        <form class="form-group input-group visible">
-            <input type="text" class="form-control bg-busca" placeholder="¿Que buscas hoy?">
-            <button class="bg-button" type="button">
-                <span class=""><img class="search-material" src="images/search.svg"></span>
-            </button>
-        </form>
+                <!--LOGO DESKTOP-->
+                <div class="col-md-2 serVisible">
+                    <img class="colocacionLogoDesktop" src="images/logo.svg">
+                </div>
+
+                <!--BUSCADOR DESKTOP-->
+                <div class="col-md-5 serVisible">
+                    <form class="form-group input-group">
+                        <input type="text" class="form-control bg-busca colocacionInputDesktop"
+                            placeholder="¿Qué buscas hoy? Encuentra entre mas de 30 mil productos...">
+                            <button class="bg-button colocacionBotonDesktop" type="button">
+                                <img class="search-material" src="images/search.svg">
+                            </button>
+                    </form>
+                </div>
+
+                <!--ICONO MOVIL-->
+                <div class="col-2 nav-item visible">
+                    <img src="images/icono cuenta.svg">
+                </div>
+
+                <div class="col-2 visible">
+                    <img class="fill-1" src="images/cart.svg">
+                </div>
+
+                <!----------------------------------------ICONOS DESKTOP------------------------------------------------------>
+                <div class="col-md-4 tammanoDivIconos align-items-center">
+                    <div class="row d-flex  justify-content-around">
+                        <div class="serVisible tamannoFavorito">
+                            <a class=""><img class="favorito" src="images/favoritos.svg"> Favoritos</a>
+                        </div>
+
+                        <!--DROPDOWN-->
+                        <div class=" nav-item dropdown serVisible">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/icono cuenta.svg"><span class="spanMiCuenta">Mi Cuenta</span>
+                            </a>
+                            <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Registrarse</a>
+                            </div>
+                        </div>
+
+                        <div class="serVisible">
+                            <img class="rectangle-13" src="images/carrito.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------>
+        <div class="col-12 col-md-6 visible">
+            <form class="form-group input-group">
+                <input type="text" class="form-control bg-busca" placeholder="¿Qué buscas hoy?">
+                    <button class="bg-button botonMovil" type="button">
+                        <img class="search-material" src="images/search.svg">
+                    </button>
+            </form>
+        </div>
+
+        <div class="col-md-12 serVisible">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light color-nav">
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+                    <div>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">SUPLEMENTOS</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">PLANTAS</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">ALIMENTACIÓN</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">COSMÉTICA</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">HIGIENE</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">MAMÁ Y BEBÉ</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">DEPORTE</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">HUERTO</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nuestras marcas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="ofertas">Ofertas </span><img
+                                        src="images/offers_icon.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
     </header>
-
     <div class="rectangle-18">
-        <p class="promociones-de-invi">¡Promociones de invierno! Gastos de envio gratis para cosmetica</p>
+        <p class="promociones-de-invi">¡Promociones de invierno! Gastos de envio gratis para
+            cosmetica</p>
+
     </div>
 
     <div class="imagen-fondo-nav">
@@ -143,8 +202,24 @@
         </div>
     </div>
     <br>
-    <div class="imagen-fondo-jackson">
-        <img src="images/bannerp_01_mob.jpg">
+
+    <div class="visible centrarBanner">
+            <img src="images/bannerp_01_mob.jpg">
+        </div>
+
+    <div class="d-flex justify-content-around col-md-12">
+        <div class="mask serVisible">
+            <div>
+                <img src="images/bannerp_01.jpg">
+            </div>
+
+        </div>
+
+        <div class="mask serVisible">
+            <div>
+                <img src="images/bannerp_02.jpg">
+            </div>
+        </div>
     </div>
 </body>
 
